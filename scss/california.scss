@@ -1,0 +1,98 @@
+@import 'base';
+@import 'font';
+@import 'colors';
+@import 'navigation';
+@import 'grid';
+
+@import 'footer';
+
+body {
+  background-color: shade($background-color, 40%);
+}
+
+button {
+  @include button(pill);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+// Page Wrapper
+.wrapper {
+  width: 95%;
+  max-width: em(1300);
+  margin: 0 auto;
+  float: none;
+  background-color: tint($secondary-color, 50%);
+  .row {
+    article {
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 701px) {
+  .jumbotron {
+    width: 100%;
+    height: 350px;
+    background: url(../img/california/cali-header-medium.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+
+/* Media Query: Adjust header when screen is large */
+
+@media (min-width: 702px) {
+  .jumbotron {
+    width: 100%;
+    height: 500px;
+    background: url(../img/california/cali-header-large.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+
+// Page Jumbotron
+.jumbotron {
+  width: 100%;
+  height: em(500);
+  background-size: cover;
+  
+  header {
+    color: $font-color-white;
+    text-align: center;
+    h1>a {
+      color: $font-color-white;
+      text-decoration: none;
+    }
+    h1,
+    p {
+      padding: 0 em(10);
+    }
+  }
+}
+
+
+
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: 75px;
+  margin-bottom: -5px;
+}
+
+
+.caliPics img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 450px;
+}

@@ -1,0 +1,254 @@
+/*!normalize.css v2.1.3|MIT License|git.io/normalize*/
+/* line 10, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 34, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 41, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 51, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 57, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* line 64, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+a {
+  background: transparent;
+}
+
+/* line 69, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 74, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 83, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 89, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 94, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 100, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 105, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 111, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+mark {
+  background: #FF0;
+  color: #000;
+}
+
+/* line 117, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 126, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 131, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 136, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 141, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 148, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 151, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 158, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+img {
+  border: 0;
+}
+
+/* line 163, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 170, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* line 177, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+fieldset {
+  border: 1px solid #C0C0C0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 185, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 193, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 204, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 213, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 223, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 232, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 239, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 248, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 255, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 261, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 269, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 277, /Applications/Scout-App.app/Contents/Resources/app.nw/scout-files/mixins/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, /Applications/Scout-App.app/Contents/Resources/app.nw/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Applications/Scout-App.app/Contents/Resources/app.nw/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*# sourceMappingURL=../css/base.map */

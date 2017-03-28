@@ -1,0 +1,68 @@
+// Custom Grid System
+
+$default_col_padding: 4%;
+
+@mixin col_width($max_cols, $padding: $default_col_padding) {
+	@if $max_cols > 0 and $padding > 0% {
+		width: percentage(((100 - (($padding / 100% * 100) * ($max_cols + 1))) / $max_cols) / 100);
+	} @else {
+		width: 100%;
+	}
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+[class*='col-'] {
+  float: left;
+  margin-left: $default_col_padding;
+  min-height: 1px;
+  position: relative;
+}
+
+
+.col-2 {
+	@include col_width(6, $default_col_padding);
+}
+
+
+.col-3 {
+	@include col_width(4, $default_col_padding);
+}
+
+
+.col-4 {
+	@include col_width(3, $default_col_padding);
+}
+
+
+.col-6 {
+	@include col_width(2, $default_col_padding);
+}
+
+
+.col-12 {
+	@include col_width(1, $default_col_padding);
+}
+
+
+@media (min-width: 480px) and (max-width: 900px) {
+	.col-2 {
+		width: (100% - (4 * $default_col_padding)) / 3;
+	}
+
+	.col-3, .col-4 {
+		width: (100% - (3 * $default_col_padding)) / 2;
+	}
+}
+
+
+@media (max-width: 479px) {
+	.col-2, .col-3, .col-4, .col-6 {
+		width: 100% - (2 * $default_col_padding);
+	}
+}

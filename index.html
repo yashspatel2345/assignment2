@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Traveling the World</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/bourbon_centered_nav.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- COPIED CENTER NAVIGATION FROM BOURBON PATTERNS -->
+    <header class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <a href="index.html" class="mobile-logo">
+          <img src="img/logo.png" alt="Logo image">
+        </a>
+        <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="california.html">California</a></li>
+            <li class="nav-link"><a href="coming_soon.html">Hawaii</a></li>
+            <li class="nav-link logo">
+              <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="coming_soon.html">Bahamas</a></li>
+            <li class="nav-link"><a href="coming_soon.html">Machu Picchu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- END COPIED CENTER NAVIGATION FROM BOURBON PATTERNS -->
+    <div class="row jumbotron">
+      <header class="col-12">
+        <h1><a href="index.html">Exploring the World.</a></h1>
+        <p>Beautiful beaches, breath-taking sights, peaceful nature. These are just some of the great feelings to experience while traveling around the world.</p>
+      </header>
+    </div>
+    <div class="row sameHeights">
+      <article class="col-3" data-key="sameHeights">
+        <h2>California</h2>
+        <!-- RESPONSIVE IMAGES -->
+        <picture>
+          <source srcset="img/home/california-large.jpg" media="(min-width: 1200px)">
+          <source srcset="img/home/california-medium.jpg" media="(min-width: 702px)">
+          <img src="img/home/california.jpg" alt="California">
+        </picture>
+        <p>Endless stretch of beautiful beaches and fantastic sights year-round!</p>
+        <a href="coming_soon.html">
+          <button>Read More</button>
+        </a>
+      </article>
+      <article class="col-3" data-key="sameHeights">
+        <h2>Hawaii</h2>
+        <!-- RESPONSIVE IMAGES -->
+        <picture>
+          <source srcset="img/home/hawaii-large.jpg" media="(min-width: 1200px)">
+          <source srcset="img/home/hawaii-medium.jpg" media="(min-width: 702px)">
+          <!-- Fallback -->
+          <img src="img/home/hawaii.jpg" alt="Hawaii">
+        </picture>
+        <p>Beautiful chain of islands with an amazing culture!</p>
+        <a href="coming_soon.html">
+          <button>Read More</button>
+        </a>
+      </article>
+      <article class="col-3" data-key="sameHeights">
+        <h2>Bahamas</h2>
+        <!-- RESPONSIVE IMAGES -->
+        <picture>
+          <source srcset="img/home/bahamas-large.jpg" media="(min-width: 1200px)">
+          <source srcset="img/home/bahamas-medium.jpg" media="(min-width: 702px)">
+          <!-- Fallback -->
+          <img src="img/home/bahamas.jpg" alt="Bahamas">
+        </picture>
+        <p>Amazing weather year round with lots of water activities for the entire family!</p>
+        <a href="coming_soon.html">
+          <button>Read More</button>
+        </a>
+      </article>
+      <article class="col-3" data-key="sameHeights">
+        <h2>Machu Picchu</h2>
+        <!-- RESPONSIVE IMAGES -->
+        <picture>
+          <source srcset="img/home/machu_picchu-large.jpg" media="(min-width: 1200px)">
+          <source srcset="img/home/machu_picchu-medium.jpg" media="(min-width: 702px)">
+          <!-- Fallback -->
+          <img src="img/home/machu_picchu.jpg" alt="Machu Picchu" class="img-responsive">
+        </picture>
+        <p>Breath-taking hike with countless spots to view mountain ranges and historical sights!</p>
+        <a href="coming_soon.html">
+          <button>Read More</button>
+        </a>
+      </article>
+    </div>
+    <!-- COPIED FOOTER FROM BOURBON PATTERNS -->
+    <footer class="footer-2" role="contentinfo">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Logo image">
+      </div>
+      <div class="footer-secondary-links">
+        <ul class="footer-social">
+          <li>
+            <a href="http://facebook.com/yash.spatel23">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- END COPIED FOOTER FROM BOURBON PATTERNS -->
+  </div>
+  <script src="js/easypeasy.js"></script>
+  <script type="text/javascript">
+  if ('addEventListener' in window) {
+    window.addEventListener('resize', function() {
+      sameHeights();
+    });
+    window.addEventListener('load', function() {
+      sameHeights();
+    });
+  }
+  </script>
+</body>
+
+</html>

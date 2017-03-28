@@ -1,0 +1,59 @@
+/* line 13, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 20, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+[class*='col-'] {
+  float: left;
+  margin-left: 4%;
+  min-height: 1px;
+  position: relative;
+}
+
+/* line 28, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.col-2 {
+  width: 12%;
+}
+
+/* line 33, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.col-3 {
+  width: 20%;
+}
+
+/* line 38, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.col-4 {
+  width: 28%;
+}
+
+/* line 43, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.col-6 {
+  width: 44%;
+}
+
+/* line 48, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+.col-12 {
+  width: 92%;
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  /* line 54, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+  .col-2 {
+    width: 28%;
+  }
+  /* line 58, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+  .col-3, .col-4 {
+    width: 44%;
+  }
+}
+
+@media (max-width: 479px) {
+  /* line 65, /Users/yash/Documents/Spring 2017/Mobile:Web/Assignment 2/scss/grid.scss */
+  .col-2, .col-3, .col-4, .col-6 {
+    width: 92%;
+  }
+}
+
+/*# sourceMappingURL=../css/grid.map */

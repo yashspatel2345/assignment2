@@ -1,0 +1,80 @@
+@import 'base';
+@import 'font';
+@import 'colors';
+@import 'navigation';
+@import 'grid';
+
+@import 'footer';
+
+body {
+  background-color: shade($background-color, 40%);
+}
+
+button {
+  @include button(pill);
+}
+
+// Page Wrapper
+.wrapper {
+  width: 95%;
+  max-width: em(1300);
+  margin: 0 auto;
+  float: none;
+  background-color: tint($secondary-color, 50%);
+  .row {
+    article {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: em(225);
+      }
+    }
+  }
+}
+
+// Page Jumbotron
+.jumbotron {
+  width: 100%;
+  height: em(500);
+  background: url(../img/home/home-header-large.jpg) no-repeat;
+  background-size: cover;
+  
+  header {
+    color: $font-color-white;
+    text-align: center;
+    h1>a {
+      color: $font-color-white;
+      text-decoration: none;
+    }
+    h1,
+    p {
+      padding: 0 em(10);
+    }
+  }
+}
+
+
+/* Media Query: Adjust header when screen gets small */
+@media (max-width: 701px) {
+  .jumbotron {
+    background: url(../img/home/home-header-medium.jpg) no-repeat;
+    background-size: cover;
+    header {
+      h1 {
+        @include padding(em(100) null null em(10));
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: 75px;
+  margin-bottom: -5px;
+}
